@@ -1,31 +1,31 @@
 # Time Plan 
 
-## 1. week
+## 1st week
 
 - Create new repository on GitHub
 - Add readme, license, time-plan and content-plan files to master
 
-## 2. week
+## 2nd week
 
 - GUI development plan 
 - GUI development (basic)
 - Pick & download pictures for spider object and scoring objects
 
-## 3. week
+## 3rd week
 
 - GUI testing and additional development (scoring, change line colours)
 - Game programming for two players
 
-## 4. week
+## 4th week
 
 - Game programming for playing against computer
 - Implementing best strategy algorithm 
 
-## 5. week
+## 5th week
 
 - Final game tests
 - If some additional time, adding some animation for spider movement
 
-## 6. week
+## 6th week
 
 - Final correction of documentation
