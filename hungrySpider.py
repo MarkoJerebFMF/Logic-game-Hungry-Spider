@@ -39,17 +39,15 @@ class gameGui():
 
 ######################################################################
 ## Main Program
+
 if __name__ == "__main__":
-    # Naredimo glavno okno in nastavimo ime
-    root = tkinter.Tk()
-    root.title("Hungry Spider")
-    # Naredimo objekt razreda Gui in ga spravimo v spremenljivko,
-    # sicer bo Python mislil, da je objekt neuporabljen in ga bo pobrisal
-    # iz pomnilnika.
-    app = gameGui(root)
-    # Kontrolo prepustimo glavnemu oknu. Funkcija mainloop neha
-    # delovati, ko okno zapremo.
-    root.mainloop()
+
+    root = tkinter.Tk()  # create Tk object, main window
+    root.title("Hungry Spider")  # set window title
+
+    app = gameGui(root)  # create gameGiu object in Tk window, we must! set the object in var.
+
+    root.mainloop()  # we set control too main Tk window, mainloop stops when we select close window
 
 
 
