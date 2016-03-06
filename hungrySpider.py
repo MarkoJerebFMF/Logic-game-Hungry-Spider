@@ -9,6 +9,8 @@ TOL = 8
 CELLSIZE = 40
 OFFSET = 10
 DOTOFFSET = OFFSET + CIRCLERAD
+PLAYER_ONE = "Player one"
+PLAYER_TWO = "Player two"
 
 
 
@@ -30,6 +32,27 @@ class gameGui():
     def __init__(self, master):
         menu = tkinter.Menu(master)  # main menu
         master.config(menu = menu)  # add main menu in the window
+
+    def start_game(self, playerOne, playerTwo):
+        self.score = 0
+        pass
+    def finish_game(self,winner, score):
+        pass
+    def click(self, event):
+        """ verifies where the mouse was clicked """
+        pass
+    def connectDots(self, xPos, yPos, orient):
+        """ connects two dots """
+        pass
+    def isMoveValid(self,xPos, yPos, orient):
+        pass
+    def isClickClose(self, xPos, yPos):
+        """verifies if the mouse click was close to the not connected dots"""
+        pass
+    def boxValue(self, xPos, yPos):
+        pass
+    def deleteMove(self,xPos, yPos, orient):
+        pass
 
 
 
