@@ -4,8 +4,8 @@ import tkinter
 
 GAME_HEIGHT = 400
 GAME_WIDTH = 400
-DOTRAD = 3  # radius of dots
-TOL = 8  #
+DOTRAD = 3  #  radius of dots
+CLICKAREA = 8  #  area for detecting mouse click
 CELLSIZE = 40
 OFFSET = 10
 DOTOFFSET = OFFSET + DOTRAD
@@ -80,7 +80,7 @@ class GameGui(tkinter.Frame):
         self.canvas.bind("<Button-1>", lambda e: self.click(e))  # bind mouse button 1 click to canvas
         self.canvas.grid(row=0, column=0)
 
-        # draw dots on canvas
+        #  draw dots on canvas
         self.dots = [[self.canvas.create_oval(CELLSIZE * i + OFFSET,
                                               CELLSIZE * j + OFFSET,
                                               CELLSIZE * i + OFFSET + 2 * DOTRAD,
