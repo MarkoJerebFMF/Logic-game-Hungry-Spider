@@ -15,14 +15,26 @@ DOTSNUM = 5
 
 
 ######################################################################
-# Game
+## Game logic
+######################################################################
+
 
 ######################################################################
-## Human player
+##  Human player
 
 
 class HumanPlayer():
-    pass
+    """class for creating a human player object"""
+
+    def __init__(self, name, color = "black"):
+        self.score = 0  # set score
+        self.str = tkinter.StringVar()
+        self.name = name
+        self.color = color
+
+    def update(self):
+        """update StringVar on Frame"""
+        self.str.set(self.name + ": %d" % self.score)
 
 
 ######################################################################
@@ -59,6 +71,11 @@ class GameGui(tkinter.Frame):
         menu.add_cascade(label="Info", menu=info_menu)
         info_menu.add_command(label="How to play?", command=lambda: self.showGameInfo())
 
+        game_menu = tkinter.Menu(menu)  # add game menu to master
+        menu.add_cascade(label = "Game", menu = game_menu)
+        game_menu.add_command(label = "Restart game!", command = lambda: self.restart_game())
+        game_menu.add_command(label = "Quit game!", command = lambda: self.quit())
+
         self.canvas = tkinter.Canvas(self, height=GAME_HEIGHT, width=GAME_WIDTH)  # create canvas
         self.canvas.bind("<Button-1>", lambda e: self.click(e))  # bind mouse button 1 click to canvas
         self.canvas.grid(row=0, column=0)
@@ -72,15 +89,15 @@ class GameGui(tkinter.Frame):
                       for j in range(DOTSNUM)] for i in range(DOTSNUM)]
         self.lines = []  # lines that connect dots
 
-        self.score = 0  # set score
-
         self.grid()
 
     def start_game(self, playerOne, playerTwo):
-
         pass
 
-    def finish_game(self, winner, score):
+    def finish_game(self):
+        pass
+
+    def restart_game(self):
         pass
 
     def click(self, event):
