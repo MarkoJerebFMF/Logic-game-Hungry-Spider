@@ -15,6 +15,8 @@
 
 - GUI testing and additional development (scoring, change line colors)
 - Game programming for two players
+- Development of class HumanPlayer
+- Development of class ScoreHistory
 
 ## 4th week
 
