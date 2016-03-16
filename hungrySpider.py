@@ -124,8 +124,16 @@ class GameGui(tkinter.Frame):
     def showScoreHistory(self):
         pass
 
+    # Game rules
     def showGameInfo(self):
-        pass
+        rules = tkinter.Label(tkinter.Toplevel(self), text=
+                            '''Rules:
+Players take turns joining two horizontally or vertically adjacent
+dots by a line. A player that completes the fourth side of a square (a box)
+colors that box and must play again. When all boxes have been colored,
+the game ends and the player who has colored more boxes wins. You are
+playing against the computer or you can play with your friend.''')
+        rules.pack(side = 'top')
 
 
 ######################################################################

@@ -1,4 +1,4 @@
-# Logic game Hungry Spider
+# Programiranje-2
 
 Reposotory contains code for all projects in course Programming 2, which is tought by prof. Andrej Bauer on Faculty for Mathematics and Physics in University of Ljubljana.
 
